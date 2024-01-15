@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --Very-dark-blue: hsl(220, 13%, 13%);
+    --Dark-grayish-blue: hsl(219, 9%, 45%);
+    --Grayish-blue: hsl(220, 14%, 75%);
+    --Light-grayish-blue: hsl(223, 64%, 98%);
+    --White: hsl(0, 0%, 100%);
+    --Black: hsla(0, 0%, 0%, 0.75); /* Adding alpha for 75% opacity */
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 16px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.main{
+    width: 60vw;
+    height: 80vh;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+    border-bottom: 2px solid var(--Light-grayish-blue);
+    height: 10vh;
+  }
+  
+  .left-nav {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .logo {
+    padding-right: 60px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  
+  .left-nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .left-nav ul li {
+    margin-right: 10px;
+  }
+  
+  .left-nav ul li a {
+    text-decoration: none;
+    color: var(--Grayish-blue);
+    position: relative;
+  }
+  
+  .left-nav ul li a:hover {
+    color: black;
+  }
+  
+  .left-nav ul li a:hover::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: hsl(26, 100%, 55%);
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+  }
+  .right-nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .carter-image {
+    margin-left: 35px;
+    border: 2px solid hsl(26, 100%, 55%);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .right-nav svg{
+    cursor: pointer;
+    position: relative;
+  }
+
+
+/*end of navbar*/
+
+  .content-holder {
+    margin-top: 30px;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .left {
+    width: 40%; /* Adjust the width as needed */
+    margin-right: 20PX;
+  }
+  
+  .right {
+    width: 50%; /* Adjust the width as needed */
+    margin: auto;
+  }
+  
+  .upper-photos img {
+    width: 100%;
+    height: 50vh;
+    border-radius: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .thumbnails {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 0 10px 0 10px;
+    cursor: pointer;
+  }
+  
+  .thumbnails img {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid hsl(26, 100%, 55%);
+    transition: opacity 0.3s ease;
+  }
+  
+  .thumbnails img.clicked {
+    opacity: 0.5;
+  }
+  
+  .sneaker-company{
+    color: hsl(26, 100%, 55%);
+  }
+  .sneaker-company h2{
+    font-size: small;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+
+  .heading p{
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .text p{
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+
+  .number{
+    display: block;
+
+  }
+  .upper-numbers{
+    display: flex;
+    align-items: center;
+  }
+  .dollars{
+    margin-right: 30px;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .percentage {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    background: hsl(25, 100%, 94%);
+    width: 40px;
+    height: 20px;
+    border-radius: 5px;
+  }
+  
+  .percentage p {
+    font-size: 15px;
+    margin: 0; /* Remove default margin */
+    color: hsl(26, 100%, 55%);
+    font-weight: 700;
+  }
+.lower-numbers{
+    font-size: 15px;
+    text-decoration: line-through;
+    color: var(--Grayish-blue);
+    margin-top: 10px;
+}  
+
+.math-icons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.signs{
+    display: flex;
+    background-color: var(--Light-grayish-blue);
+    width: 140px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+.zero{
+    font-weight: 700;
+}
+.add-to-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(26, 100%, 55%);
+    padding: 0 10px 0 10px;
+    color: white;
+    width: 170px;
+    border-radius: 8px;
+}
+.add-to-cart svg{
+    margin-right: 20px;
+    color: white;
+}
